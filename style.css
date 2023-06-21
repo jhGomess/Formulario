@@ -8,8 +8,36 @@
 
 :root {
   font-size: 62.5%;
+
+  --bg-body: #e5e5e5;
+  --bg-before: #121214;
+  --header-color: #42d3ff;
+  --bg-form: #fafafc;
 }
 
 body {
   font-size: 1.6rem;
+
+  background-color: var(--bg-body);
+}
+
+body * {
+  font-family: "Poppins", sans-serif;
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  height: 36.8rem;
+  background-color: var(--bg-before);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.page {
+  width: 73.6rem;
+  margin: 0 auto;
 }

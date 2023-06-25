@@ -22,7 +22,7 @@
         <p>O primeiro passo, é preencher esse formulário de inscrição.</p>
       </header>
 
-      <form>
+      <form id="my-form">
         <fieldset>
           <div class="fieldset-wrapper">
             <legend>Informações do Evento</legend>
@@ -31,7 +31,13 @@
               <label for="event-title"
                 >Título do evento<span>(mínimo 8 caracteres)</span></label
               >
-              <input type="text" name="event-title" id="event-title" />
+              <input
+                type="text"
+                name="event-title"
+                id="event-title"
+                minlength="8"
+                required
+              />
             </div>
 
             <div class="input-wrapper">
@@ -87,6 +93,8 @@
                 type="password"
                 name="event-password"
                 id="event-password"
+                minlength="8"
+                required
               />
             </div>
 
@@ -121,7 +129,16 @@
       </form>
 
       <footer>
-        <input class="button" type="submit" value="Salvar Evento" />
+        <input
+          class="button"
+          type="submit"
+          form="my-form"
+          value="Salvar Evento"
+        />
+        <!-- outra forma de submeter o formulário, também podendo deixar o input submete ou o button dentro do formulário, depende do que faz mais sentido no projeto que está fazendo. 
+        <button class="button" type="submit" form="my-form">
+          Salvar Evento
+        </button> -->
       </footer>
     </div>
   </body>

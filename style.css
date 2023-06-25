@@ -16,6 +16,9 @@
   --border-color: #e6e6f0;
   --label-input-color: #4e4958;
   --span-color: #c1bccc;
+  --bg-footer: #f0f0f4;
+  --bg-button: #04d361;
+  --bg-button-hover: #15a154;
 }
 
 body {
@@ -70,7 +73,7 @@ form {
   width: 73.6rem;
   min-height: 30rem;
   background-color: var(--bg-form);
-  border-radius: 0.8rem;
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
 
   padding: 6.4rem;
 
@@ -199,4 +202,33 @@ fieldset legend {
 
 .col-3 > div:nth-child(1) {
   width: 100%;
+}
+
+footer {
+  background-color: var(--bg-footer);
+  height: 13.6rem;
+  border-top: 1px solid #d6d6d6;
+  border-radius: 0rem 0rem 0.8rem 0.8rem;
+  padding: 4rem 6.4rem;
+  margin-bottom: 10rem;
+}
+
+footer .button {
+  width: 100%;
+  height: 5.6rem;
+  color: white;
+  border-radius: 0.8rem;
+  background: var(--bg-button);
+  border: none;
+
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+
+  transition: background 0.2s;
+}
+
+footer .button:hover {
+  background: var(--bg-button-hover);
 }

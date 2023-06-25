@@ -230,6 +230,8 @@ footer .button {
   font-size: 1.6rem;
   line-height: 2.6rem;
 
+  cursor: pointer;
+
   transition: background 0.2s;
 }
 

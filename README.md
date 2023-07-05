@@ -1,7 +1,7 @@
-<h1 align="center"> Treine Me </h1>
+<h1 align="center"> formulário crie seu evento </h1>
 
 <p align="center">
-Projeto desenvolvido no stage 2 do programa Explorer da RocketSeat. <br/>
+Projeto desenvolvido no stage 3 do programa Explorer da RocketSeat. <br/>
 </p>
 
 <p align="center">
